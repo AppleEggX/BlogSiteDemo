@@ -1,0 +1,247 @@
+
+.page-container {
+	
+	border:1px solid black;
+	overflow:hidden;
+}
+
+.row {
+	clear: both; /*removing any float*/
+	padding: 0 0 0 1%; /* THAT'S THE NAME ;) */
+}
+
+.col {
+	float: left;
+	margin: 0 3% 0 0;
+}
+.right-col{
+	float: right;
+	margin: 0 3% 0 0;;
+}
+
+.first-col{
+	
+	float: left;
+}
+
+.fixed{
+	
+	 min-height:500px;
+	
+}
+
+.last-col {
+	margin: 0;
+}
+
+.col1 { width: 5.5%; }
+.col2 { width: 14%; }
+.col3 { width: 22.5%; }
+.col4 { width: 31%; }
+.col6 { width: 48%; }
+.col5 { width: 39.5%; }
+.col7 { width: 56.5%; }
+.col8 { width: 65%; }
+.col9 { width: 73.5%; }
+.col10 { width: 82%; }
+.col11 { width: 90.5%; }
+.col12 { width: 99%; margin: 0; }
+
+.box {
+	
+	background: black;
+	text-align: center;	
+}
+
+#play{
+	
+	background: #2eabe2;
+	text-align: center;	
+}
+
+
+
+
+.float-right{
+	
+	float:right;
+	padding:10px;
+	margin-right:40px;
+	margin:auto;
+
+}
+
+ul{
+	
+	list-style-type:none;
+}
+
+ul li a{
+	
+	float:right;
+	color:black;
+	padding: 10px;
+}
+
+.margin-top{
+	
+	margin-top:10px;
+	
+}
+
+.small-letter{
+	
+	font-size: 1em;
+}
+
+.centerImage{
+	
+	display: block;
+    margin-left: 30%;
+}
+
+#silva{
+	
+	padding-top:5px;
+}
+
+#kev{
+	
+	margin-top:22px;
+}
+
+a:hover {
+    color: orange;
+}
+
+p{
+	font-family:verdana;
+}
+
+
+.bottom-border{
+	
+	border-bottom:5px solid black;
+}
+
+.top-border{
+	
+	border-top:5px solid black;
+}
+
+.left-align{
+	
+	text-align:left;
+}
+
+.margin-left{
+	
+	margin-left:50px;
+}
+
+.border{
+	
+	border:1px solid black;
+	
+}
+
+.button{
+	
+	background-color:#f9b041;
+	color:#ffffff;
+	padding:50px;
+
+}
+
+.highlight{
+	
+	border:2px solid #2eabe2;
+}
+
+.relative-position{
+	
+	position:relative;
+	bottom:65px;
+	left:350px;
+}
+
+#footer{
+	
+	border-top:5px solid black;
+}
+
+.contact {
+	
+	float:left;
+	width: 100%;
+	text-align:left;
+	margin-bottom:2px;
+	margin-top:2px;
+	display:inline;
+}
+
+.float-left{
+	
+	float:left;
+}
+
+#contactUs{
+	
+	margin-bottom:10px;
+}
+
+#email{
+	
+	font-size: 0.85em;
+}
+.fa {
+    padding: 20px;
+    font-size: 30px;
+    width: 50px;
+    text-align: center;
+    text-decoration: none;
+}
+
+/* Add a hover effect if you want */
+.fa:hover {
+    opacity: 0.7;
+}
+
+/* Set a specific color for each brand */
+
+/* Facebook */
+.fa-facebook {
+    background: #3B5998;
+    color: white;
+}
+
+/* Twitter */
+.fa-twitter {
+    background: #55ACEE;
+    color: white;
+}
+
+#firstSocialMedia{
+	
+	position:relative;
+	bottom:56px;
+	left:350px;
+}
+
+#secondSocialMedia{
+	
+	position:relative;
+	bottom:56px;
+	left:350px;
+}
+
+@media only screen and (max-width : 640px)
+{
+#logo{
+	
+	margin-right:33%;
+}
+	
+}
+
+

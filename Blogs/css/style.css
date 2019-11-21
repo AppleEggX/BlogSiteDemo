@@ -1,0 +1,384 @@
+
+@media only screen and (max-width:768px) and (min-width:426px) {
+	header {
+		width: 100%;
+		position: fixed;
+		z-index: 1;
+		height: 50%;
+		background-color: black;
+		border-bottom: 1px hidden seashell;
+		margin: 0;
+		font-size: 0.5em;
+	}
+	#info .nobutton{
+		font-size: 12px;
+		margin-top:0px;
+		height: 30px;
+		text-align: center;
+		display: flex;
+		overflow: visible;
+		width: 60px;
+		align-items: center;
+	}
+	
+	#disp {
+		position: absolute;
+		top:-9999999px;
+		left:-99999999ps;
+	}
+	
+}
+@media only screen and (max-width:660px){
+	.text {
+		background-color: rgba(110,110,110,0.8);
+	
+	}
+}
+@media only screen and (max-width:425px){
+	header {
+		font-size: 0.5em;
+	}
+	header input {
+		width:10%;
+	}
+	#info {
+		margin: 0;
+		max-width: 1020px;
+		font-size:0.75em;
+		height: 100px;
+		opacity: 0.9;
+	}
+	#info img {
+		position: absolute;
+		
+	}
+	#info h3 {
+		position: fixed;
+		top:50%;
+	}
+	#info .nobutton {
+		position: relative;
+		left:-0%;
+		top:75%;
+		
+	}
+	#disp {
+		position: absolute;
+		top:-9999999px;
+		left:-99999999ps;
+	}
+	.blog{
+		height: 460px;
+		overflow: hidden;
+	}
+	
+}
+@media only screen and (max-width:359px){
+	.centerS {
+		display: flex;
+		left: 20%;
+		align-items: center;
+	}
+}
+	
+@media only screen and (max-width:320px){
+	body{
+		all: initial;
+	}
+	
+	#disp {
+		position: absolute;
+		top:-9999999px;
+		left:-99999999ps;
+	}
+	.centerS {
+		display: flex;
+		left: 15%;
+		align-items: center;
+	}
+}
+
+body {
+	margin: 0;
+	font-family: 'Bangers', cursive;
+	color: seashell;
+	background-image: linear-gradient(135deg,#000000,#333666,#000000,#333666,#000000);
+	font-size: 22px;
+	text-align: center;
+	text-shadow: 0 3px 3px rgb(100,100,100,0.2);
+	
+}
+
+a {
+	color: seashell;
+}
+
+p,
+h3,
+h4,
+h5 {
+	margin-top:8px;
+	font-family: 'Bangers', cursive;
+}
+
+.flex-container {
+	display: flex;
+	justify-content: center;
+	flex-wrap: wrap;
+	
+}
+.float-left{
+	display:block;
+	float: left;
+	width: 20%;
+}
+.float-right{
+	display: block;
+	float: left;
+	width: 70%;
+}
+	
+
+/* navigation part*/
+header {
+	width: 100%;
+	position: fixed;
+	z-index: 1;
+	height: 5%;
+	background-color: black;
+	border-bottom: 1px hidden seashell;
+	align-items: center;
+	margin: auto;
+	overflow: visible;
+}
+
+nav span {
+	float: center;
+	padding-left: 5px;
+}
+
+#info {
+	margin: 0 auto;
+	max-width: 1020px;
+	transform: translateY(-80px);
+	height: 100px;
+	opacity: 0.9;
+}
+#infoback {
+	width:100%;
+	z-index: -1;
+}
+
+#info img{
+	margin-right:8px;
+	position: flex;
+	margin:0px;
+	height: 100px;
+	width: 100px;
+	z-index: 5;
+	border-radius: 18px;
+}
+#info h3{
+	margin-right: 5px;
+	margin-left: 5px;
+	margin-top:10px;
+	padding-top: 45px;
+	font-size: 25px;
+	
+}
+#info .nobutton{
+	margin-top: 60px;
+	height: 30px;
+	text-align: center;
+	border-radius: 8px;
+	box-shadow: 0 3px 7px rgba(110,110,110,0.7);
+	background-image: linear-gradient(65deg,#9900ff, #330066, #9900ff);
+	color: white;
+}
+.shakeshake{
+	box-shadow: 0 3px 5px rgba(110,110,110,0.7);
+}
+.shakeshake::before,
+.shakeshake::after {
+	content: '';
+	color: white;
+}
+.shakeshake:hover{
+	animation: shake infinite 2s ease;
+}
+@keyframes shake {
+	0% {
+			transform: rotate(0deg);
+		}
+		4% {
+			transform: rotate(-5deg);
+		}
+		8% {
+			transform: rotate(5deg);
+		}
+		12% {
+			transform: rotate(-5deg);
+		}
+		16% {
+			transform: rotate(5deg);
+		}
+		20% {
+			transform: rotate(-5deg);
+		}
+		24% {
+			transform: rotate(5deg);
+		}
+		28% {
+			transform: rotate(-0deg);
+		}
+}
+
+/*main part*/
+#main {
+	margin: 0 auto;
+	max-width: 1020px;
+	opacity: 0.9;
+	z-index:-1;
+}
+
+#popular{
+	padding: 10px;
+}
+#popular button{
+	color: white;
+	justify-content: space-between;
+	margin-left: 20px;
+	padding: 10px;
+	float: left;
+	width:150px;
+	height: 150px;
+	background-image: url("https://bitcoinist.com/wp-content/uploads/2019/03/shutterstock_560802985.jpg");
+	background-size: cover;
+}
+
+.bubble-l{
+	position: relative;
+	
+	justify-content: center;
+	align-items: center;
+	border-radius: 100%;
+	background-image: linear-gradient(45deg,rgb(14,14,46),rgb(64,64,110));
+	font-size: 22px;
+	text-align:center;
+	box-shadow: 0 8px 10px 3px rgba(120,120,120,0.5);
+}
+.bubble-l::before,
+.bubble-l::after {
+	content:'#';
+	position: absolute;
+	background: rgb(51,149,230);
+	border-radius: 100%;
+	width:150px;
+	height:150px;
+	left: -2px;
+	top: -2px;
+	transform:translateY(5px);
+	animation: rotate1 infinite 3s linear;
+	z-index: -1;
+}
+@keyframes rotate1 {
+	0% {
+		transform: rotate(0deg) translateY(5px);
+	}
+	100% {
+		transform: rotate(360deg) translateY(5px);
+	}
+}
+
+/*blogs*/
+.content {
+	overflow: hidder;
+}
+.content img{
+	height: 200px;
+	width: 200px;
+	margin: 10px 20px;
+	padding-right: 5px;
+}
+.content span {
+	padding-top: 5px;
+	padding-left: 5px;
+	padding-right: 5px;
+	font-weight: normal;
+	text-align: left;
+}
+.pt {
+	display: flex;
+	position:relatvie;	
+}
+
+.blog p{
+	font-family: 'Bangers', cursive;
+	overflow: hidden;
+}
+
+.blog{
+	border: 1px solid seashell;
+	margin-top: 10px;
+}
+.blog span{
+	display:inline-block;
+}
+.blog img {
+	border-radius: 18px;
+}
+.jump {
+	margin-top:10px;
+	display: block;
+	filter: drop-shadow(0 1px 1px #973340a3);
+	backgroun-color: white;
+}
+.jump:hover{
+	animation: jump infinite 2s ease;
+}
+.jump::before,
+.jump::after {
+	content:'';
+	color: black
+}
+@keyframes jump{
+			0% {
+				transform: translateY(0px);
+			}
+			20% {
+				transform: translateY(-10px);
+			}
+			40% {
+				transform: translateY(0px);
+			}
+			50% {
+				transform: translateY(-10px);
+			}
+			60% {
+				transform: translateY(0px);
+			}
+			65% {
+				transform: translateY(-10px);
+			}
+			70% {
+				transform: translateY(0px);
+			}			
+		}
+
+/*footer*/
+footer{
+	margin: 0 auto;
+	max-width: 1020px;
+}
+#ql span {
+	float:left;
+	padding-left: 5px;
+	font-size: 12px;
+}
+#pl p{
+	float: right;
+	padding-right: 5px;
+	font-size: 18px;
+	font-family: 'Bangers', cursive;
+}
+
