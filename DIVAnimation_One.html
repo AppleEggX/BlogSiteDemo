@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <body>
+    <div class="Circle-loading">
+      <div class="circle-loading">20%</div>
+        <style media="screen">
+          .circle-loading{
+            position: relative;
+            display: flex;
+            justify-content:center;
+            align-items: center;
+            border: 4px solid rgb(184,187,191);
+            border-radius: 100%;
+            width: 40px;
+            height: 40px;
+            margin-right: 50px;
+            font-size: 12px;
+            font-weight: bold;
+            color: purple;
+            box-shadowing: 0 1px 2px 1px rgba(0,0,0,0.2),
+              inset 0 1px 2px 1px rgba(0,0,0,0.2);
+          }
+          .circle-loading::before {
+            content: '';
+            position: absolute;
+            display:block;
+            border: 4px solid transparent;
+            border-top-color: rgb(172,28,191);
+            border-radius: 100%;
+            width: 40px;
+            height: 40px;
+            animation: rotate1 infinite 2s ease;
+          }
+          @keyframes rotate1 {
+            0% {
+              transform: rotate(0deg);
+            }
+            100% {
+              transform: rotate(360deg);
+            }
+          }
+        </style>
+    </div>
+
+    <div class="Bubble-loading">
+      <div class="bubble-loading">20%</div>
+      <style media="screen">
+        .bubble-loading {
+          /*Delete margin*/
+          margin-top: 10px;
+          position: relative;
+          display:flex;
+          justify-content:center;
+          align-items: center;
+          border-radius: 100%;
+          width: 40px;
+          height: 40px;
+          background-image: linear-gradient(45deg, rgb(14,14,46), rgb(64,64,110));
+          font-size: 12px;
+          color: white;
+          box-shadow: 0 3px 2px 1px rgba(0,0,0,0.2);
+        }
+        .bubble-loading::after,
+        .bubble-loading::before {
+          content:'';
+          position: absolute;
+          width: 40px;
+          height: 40px;
+          background: rgb(51,149,230);
+          border-radius: 100%;
+          z-index: -1;
+          transform: translateY(-2px);
+          animation: rotate2 infinite 3s linear;
+        }
+        @keyframes rotate2 {
+          0% {
+            transform: rotate(0deg) translateY(-2px);
+          }
+          100% {
+            transform: rotate(360deg) translateY(-2px);
+          }
+        }
+      </style>
+    </div>
+<!--
+    <div class="Teacup-loading">
+      <div class="teacup-loading">20%<div>
+        <style media="screen">
+          .teacup-loading {
+            margin-top:10px;
+            positon: relative;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 40px;
+            height: 40px;
+            border: 4px solid rgb(30,29,20);
+            border-top-width: 0;
+            border-radius: 0 0 16px 16px;
+            font-size: 12px;
+            font-weight: bold;
+            background-color: #fff3da;
+            color: rgb(30,29,20);
+            overflow: hidder;
+            box-shadow: 0 1px 2px 1px rgba(0,0,0,0.2);
+            transform: translateZ(0);
+          }
+          .teacup-loading::before,
+          .teacup-loading::after {
+            content: '=';
+            position: absolute;
+            bottom:0;
+            left:0;
+            z-index: 0;
+            right: -120px;
+            height: 20px;
+            clip-path: polygon(
+              0% 20%,
+              2% 18%,
+              8% 11%
+            )
+          }
+          .teacup-loading::before {
+            background-color: rgb(255,214,125)
+            animation: move1 infinite 6s linear;
+          }
+          .teacup-loading::after{
+            background-color: rgb(255,174,9)
+            animation: move2 infinite 2s linear;
+          }
+          @keyframes move1{
+            0% {
+              transform: translateX(0);
+            }
+            100% {
+              transform: translateX(-80px);
+            }
+          }
+          @keyframes move2 {
+            0% {
+              transform: translateX(-20px);
+            }
+            100 {
+              transform: translateX(-100px);
+            }
+          }
+        </style>
+    </div>
+-->
+    <div class="PlayButton">
+      <div class="playbutton"/>
+        <style media="screen">
+          .playbutton{
+            margin-top:10px;
+            position: relative;
+            width: 40px;
+            height: 40px;
+            border-radius: 100%;
+            background-image: linear-gradient(45deg, #5298ff,#ff00a8);
+            box-shadow: 0 1px 2px 1px rgba(0,0,0,0.2);
+          }
+          .playbutton::before{
+            content:'';
+            position: absolute;
+            left: 21px;
+            top: 50%;
+            margin-left:-4px;
+            margin-top: -8px;
+            width:0;
+            height:0;
+            border:10px solid transparent;
+            border-left-color: white;
+            border-top-width: 8px;
+            filter:drop-shadow(0 2px 1px rgba(0,0,0,0.2));
+            transition: all 0.2s ease;
+            will-change:border-width, height, left;
+          }
+          .playbutton::after{
+            content:'';
+            position: absolute;
+            right: 16px;
+            top: 50%;
+            margin-right: -4px;
+            margin-top: -8px;
+            width: 0;
+            height: 16px;
+            border: 5px solid transparent;
+            border-width: 0 0 0 5px;
+            border-left-color: white;
+            filter: drop-shadow(0 2px 1px rgba(0, 0, 0, 0.2));
+            opacity: 0;
+            transform: scale(0);
+            transition: all 0.2 ease;
+          }
+          .playbutton:hover::before {
+            border-width: 0 0 0 5px;
+            height: 16px;
+            left: 16px;
+          }
+          .playbutton:hover::after {
+            opacity: 1;
+            transform: scale(1);
+          }
+        </style>
+
+    </div>
+
+    <div class="FloatingButton">
+      <div class="floating-button">
+      </div>
+      <style media="screen">
+        .floating-button{
+          position:relative;
+          width:40px;
+          height: 40px;
+          border-radius: 100%;
+          background-image: linear-gradient(45deg, #52ffaf,#2196f3);
+          box-shadow: 0 1px 2px 1px rgba(0, 0, 0, 0.3);
+        }
+        .floating-button::before,
+        .floating-button::after {
+          content:'';
+          position: absolute;
+          left: 50%;
+          top: 0;
+          display: block;
+          margin-left: -9px;
+          border-radius: 3px;
+          width: 18px;
+          height: 3px;
+          background-color: white;
+          transition: all 0.2 ease;
+        }
+        .floating-button::before {
+          transform: translateY(12px);
+          filter: drop-shadow(0 6px 0 white);
+        }
+        .floating-button::after {
+          transform: translateY(24px);
+        }
+        .floating-button:hover::before{
+          filter:none;
+          transform: translateY(18px) rotate(-45deg);
+        }
+        .floating-button:hover::after{
+          transform: translateY(18px) rotate(45deg);
+        }
+      </style>
+    </div>
+
+    <div class="ProcessBar">
+      <div class="process-bar">
+      </div>
+      <style media="screen">
+        .process-bar{
+          margin-top:10px;
+          position:relative;
+          border-radius: 8px;
+          width:60px;
+          height:20px;
+          background-color: #eee;
+          transform: translateY(-34%);
+        }
+        .process-bar::before {
+          content:'';
+          position: relative;
+          z-index: 1;
+          display:block;
+          border-radius: 8px;
+          height: 20px;
+          width: 50%;
+          background-image: linear-gradient(0deg, #ff7a3b, #ffc107);
+          box-shadow: 0 1px 2px 0 #ff7a3ba3;
+          filter: drop-shadow(2px 0 1px rgba(0,0,0,0.3));
+          transition: all 0.2s ease;
+        }
+        .process-bar::after {
+          content:'50%';
+          position: absolute;
+          left: 50%;
+          transform: scale(0.9) translate(-50%, 20%);
+          font-size: 12px;
+          font-weight: bold;
+          color: #54390f;
+        }
+        .process-bar:hover::before {
+          width: 100%;
+        }
+        .process-bar:hover::after {
+          content: '100%';
+        }
+      </style>
+    </div>
+
+
+  </body>
+</html>
